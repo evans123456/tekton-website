@@ -255,17 +255,12 @@ nav a#pull {
 	float: left;
 
 }
-
-	
-
-
-
 }
 
 /*--end-header--*/
 /*--starts-banner--*/
 .banner-1{
-	background:url(../images/banner-1.jpg) no-repeat;
+	background:url(../images/IMG_20180324_160520.jpg) no-repeat;
 	background-size:100% 100%;
 	min-height: 600px;
 }
