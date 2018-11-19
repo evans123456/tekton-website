@@ -26,24 +26,23 @@ real estate consultancy, project design" />
 		</script>
 <!--end-smoth-scrolling-->
 <!--start-top-nav-script-->
-		<script>
-			$(function() {
-				var pull= $('#pull');
-					menu= $('nav ul');
-					home_mobile= $('#home-mobile')
-					menuHeight= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.show();
-	        		}
-	    		});
-			});
-		</script>
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+			}
+		});
+	});
+</script>
 <!--End-top-nav-script-->
 <!--light-box-files -->
 		<script src="js/jquery.chocolat.js"></script>
@@ -78,23 +77,34 @@ real estate consultancy, project design" />
 					<!--start-top-nav-->
 					<nav class="top-nav" style="float: right;"> 
 							<!-- navbar-nav -->
-						<ul class="top-nav" id="menu-items">
-							<li><a href="index.html"  class="active">Home</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li ><a id="dropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-							<!-- DROPDOWN MENU -->
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    							<a class="dropdown-item" href="tekton_commercial.html">Tekton Commercial</a>
-    							<a class="dropdown-item" href="tekton_materials.html">Tekton Materials</a>
-    							<a class="dropdown-item" href="tekton_mining.html">Tekton Mining</a>
-    							<a class="dropdown-item" href="tekton_residential.html">Tekton Residential</a>
-    							<a class="dropdown-item" href="tekton_consulting.html">Tekton Consulting</a>
-    							<a class="dropdown-item" href="tekton_properties.html">Tekton Properties</a>
-  							<!-- </div>	 -->
-							</div></li>
-							<li><a href="contact.html">Contact us</a></li>
-						</ul></nav></div></div>
+							<style>
+								.show{
+									display: inline-block !important;
+								}
+							</style>
+							<ul class="top-nav">
+								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a id="dropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+										<!-- DROPDOWN MENU -->
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											<a class="dropdown-item" href="tekton_commercial.html">Tekton Commercial</a>
+											<a class="dropdown-item" href="tekton_materials.html">Tekton Materials</a>
+											<a class="dropdown-item" href="tekton_mining.html">Tekton Mining</a>
+											<a class="dropdown-item" href="tekton_residential.html">Tekton Residential</a>
+											<a class="dropdown-item" href="tekton_consulting.html">Tekton Consulting</a>
+											<a class="dropdown-item" href="tekton_properties.html">Tekton Properties</a>
+										  <!-- </div>	 -->
+										</div></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+					</nav>
+				
+				
+				
+				</div></div>
+
 	<!--start-banner-->
 	<div class="banner">
 		<div  id="top" class="callbacks_container">
