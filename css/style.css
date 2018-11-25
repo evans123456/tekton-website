@@ -1351,6 +1351,11 @@ ul.callbacks_tabs.callbacks2_tabs {
 	font-weight: 600;
 	margin: 0px;
 }
+@media screen and (max-width: 800px) {
+	.body {
+	  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+  }
 .team-top-left img {
 	width: 100%;
 }
